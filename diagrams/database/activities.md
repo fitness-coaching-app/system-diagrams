@@ -15,6 +15,7 @@ classDiagram
         activityType: ActivityType
         timestamp: date
         data: ActivityData
+        isPublic: bool
         reactions: Reaction[]
         comments: Comment[]
     }

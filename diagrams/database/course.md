@@ -4,8 +4,8 @@
 }
 }%%
 classDiagram
-    courses -- Rating
-    courses -- Difficulty
+    courses "1" -- "0..*" Rating
+    courses "1" -- "1" Difficulty
 
     class courses{
         _id: objectId

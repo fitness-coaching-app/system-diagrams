@@ -4,12 +4,12 @@
 }
 }%%
 classDiagram
-    users -- AchievementEarned
-    users -- UserPreference
-    users -- StatusType
-    users -- GenderType
-    users -- WeightData
-    users -- HeighData
+    users "1" -- "0..*" AchievementEarned
+    users "1" -- "1" UserPreference
+    users "1" -- "1" StatusType
+    users "1" -- "1" GenderType
+    users "1" -- "1..*" WeightData
+    users "1" -- "1..*" HeighData
 
     class users{
         _id: objectId

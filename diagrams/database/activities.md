@@ -4,10 +4,10 @@
 }
 }%%
 classDiagram
-    activities -- Reaction
-    activities -- Comment
-    activities -- ActivityType
-    activities -- ActivityData
+    activities "1" -- "0..*" Reaction
+    activities "1" -- "0..*" Comment
+    activities "1" -- "1" ActivityType
+    activities "1" -- "1" ActivityData
 
     class activities{
         _id: objectId

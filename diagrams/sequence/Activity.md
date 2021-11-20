@@ -31,6 +31,7 @@ sequenceDiagram
     participant App as Mobile Application
     participant API
     participant DB as Database
+    participant GCS as Google Cloud Storage
 
     User->>+App: Tap "Activity" button
     App->>+API: Fetch activity that the user is following
@@ -40,6 +41,11 @@ sequenceDiagram
     %% TODO: Think about activity feed compiliation algorithm
     
     API-->>-App: Return activity feed
+    App->>+App: Fetch photos from Google Cloud Storage by URL
+    App->>+GCS: Request photos
+    GCS-->>-App: Return photos
+    deactivate App
+    
     App-->>User: Show activity feed
 
     opt React on someone's activity

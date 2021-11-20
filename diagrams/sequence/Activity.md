@@ -37,15 +37,15 @@ sequenceDiagram
     App->>+API: Fetch activity that the user is following
     API->>+DB: Get user's following list
     DB-->>-API: Return user's following list
-
-    %% TODO: Think about activity feed compiliation algorithm
+    API->>+DB: Query activity that the user is following
+    DB-->>-API: Return activity feed
     
     API-->>-App: Return activity feed
     App->>+App: Fetch photos from Google Cloud Storage by URL
     App->>+GCS: Request photos
     GCS-->>-App: Return photos
     deactivate App
-    
+
     App-->>User: Show activity feed
 
     opt React on someone's activity

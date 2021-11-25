@@ -14,7 +14,6 @@ classDiagram
     }
 
     class LikeData{
-        _id: objectId
         userId: string
         timestamp: string
     }

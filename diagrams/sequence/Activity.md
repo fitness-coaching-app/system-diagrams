@@ -1,28 +1,31 @@
 ```mermaid
 %%{init: {
     "fontFamily": "Helvetica",
+    "style": "height: auto",
     "sequence": {
             "mirrorActors": false,
 
             "actorFontFamily": "Helvetica",
-            "actorFontSize": 18,
+            "actorFontSize": 24,
             "actorFontWeight": "bold",
             "actorMargin": 150,
 
             "messageFontFamily": "Helvetica",
             "messageFontWeight": 200,
-            "messageFontSize": 14,
+            "messageFontSize": 24,
             
             "activationWidth": 20,
             
-            "width": 250,
+            "width": 300,
             "height": 100,
 
             "rightAngles": true,
 
-            "labelBoxWidth": 50,
-            "labelBoxHeight": 30,
-            "wrapPadding": 0
+            "labelBoxWidth": 80,
+            "labelBoxHeight": 50,
+            "wrapPadding": 0,
+            
+            "useMaxWidth": false
         }
     }
 }%%
@@ -67,8 +70,6 @@ sequenceDiagram
         App-->>User: Display user's comment
         deactivate App
     end
-
-    User->>App: Test
 
     deactivate App
     

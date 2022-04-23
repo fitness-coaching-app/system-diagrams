@@ -14,7 +14,8 @@ classDiagram
         category: string
         bodyParts: string[]
         viewCount: int
-        rating: Rating[]
+        overallRating: double
+        ratings: Rating[]
         difficulty: Difficulty
         coverPicture: string
         courseData: string

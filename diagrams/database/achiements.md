@@ -9,7 +9,7 @@ classDiagram
         title: string
         description: string
         picture: string
-        criteria: string[]
+        criteria: string
     }
 
 ```

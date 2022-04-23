@@ -21,7 +21,7 @@ classDiagram
         weightHistory: WeightData[]
         heightHistory: HeightData[]
         xp: int
-        level: int
+        searchHistory: string[]
         profilePicture: string
         gender: GenderType
         exercisePreference: string[]
